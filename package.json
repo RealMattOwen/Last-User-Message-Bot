@@ -1,6 +1,6 @@
 {
 	"name": "LastUserMessageBot",
-	"version": "1.9.2",
+	"version": "1.0.0",
 	"main": "app.js",
 	"repository": "https://github.com/RealMattOwen/Last-User-Message-Bot",
 	"author": "Matthew Owen <matty101@live.co.uk>",
