@@ -1,0 +1,21 @@
+{
+	"name": "LastUserMessageBot",
+	"version": "1.9.2",
+	"main": "app.js",
+	"repository": "https://github.com/RealMattOwen/Last-User-Message-Bot",
+	"author": "Matthew Owen <matty101@live.co.uk>",
+	"license": "MIT",
+	"scripts": {
+		"babel-node": "babel-node",
+		"start": "nodemon --exec yarn babel-node -- ./src/app.js"
+	},
+	"dependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"discordie": "^0.11.0",
+		"global": "^4.3.2",
+		"mongoose": "^5.2.5",
+		"nodemon": "^1.18.3"
+	}
+}
