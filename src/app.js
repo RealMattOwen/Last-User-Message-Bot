@@ -18,11 +18,11 @@ mongoose.connect('mongodb://localhost:27017/track_last_user_message', { useNewUr
 		client.connect({ token });
 
 		client.Dispatcher.on(Events.GATEWAY_READY, () => {
-			console.log('Connected as: ' + client.User.username + '!');
+			console.log(`Connected as: ${client.User.username}!`);
 		});
 
 		client.Dispatcher.on(Events.MESSAGE_CREATE, async (e) => {
-			if (e.message.guild.name === serverName) {
+			if (e.message.guild.name === serverName && e.message.channel.name !== 'moderators') {
 				const { message: { author: messageSender, channel, content: messageContent, guild: { members: serverMembers }, timestamp } } = e;
 
 				if (!messageSender.bot) {

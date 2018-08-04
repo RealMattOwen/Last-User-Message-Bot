@@ -14,7 +14,6 @@
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
 		"discordie": "^0.11.0",
-		"global": "^4.3.2",
 		"mongoose": "4.13.14",
 		"nodemon": "^1.18.3"
 	}
